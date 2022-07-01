@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dibujando con el mouse</title>
+  </head>
+  <body>
+    <h1>Vamos a dibujar con el mouse</h1>
+
+    <div id="content">
+      <div class="canvascontainer">
+        <div class="canvas-top">
+          <canvas id="canvas" width="500" height="500" ></canvas>
+        </div>
+      </div>
+      <div class="toolbar">
+        <input type="color" value="#000" id="color_Picker" title="Color del trazo">
+        <input type="range" min="1" max="100" value="5" id="anchoLinea" orient="vertical" title="Ancho del trazo">
+        <input type="radio" name="tools" onclick='pencil()' checked class="pencil">
+        <input type="radio" name="tools" onclick='erase()' class="eraser">
+        <span onclick='resetLienzo()' class="reset" title="Borrar lienzo"></span>
+    </div>
+    <script type="text/javascript" src="js/eventos.js">
+
+    </script>
+    <footer>
+		<p align="center">Hecho con ❤ sudor y lagrimas por @antolinetz - 2022</p>
+	</footer>
+  </body>
+</html>
